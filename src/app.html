@@ -1,3 +1,19 @@
 <template>
-  <h1>${message}</h1>
+    <require from="./app.css"></require>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <section class="au-animate">
+                <div class="container-fluid main-container">
+                    <div class="new-list panel panel-primary">
+                        <div class="panel-heading">
+                            <input value.bind="newList" type="text" class="form-control" />
+                            <button click.delegate="addList()" class="btn btn-primary btn-block">Add a list...</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </template>
+
